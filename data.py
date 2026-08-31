@@ -4,6 +4,7 @@ Introduction to Artificial Intelligence, 89570, Bar Ilan University, ISRAEL
 Author: Kobie Hazon
 
 """
+
 from collections import Counter
 
 
@@ -16,7 +17,7 @@ def watch_data_info(data):
     print(data.info())
 
     # Descriptive statistics include those that summarize the central tendency, dispersion and shape of a dataset’s distribution, excluding NaN values.
-    print(data.describe(include='all').transpose())
+    print(data.describe(include="all").transpose())
 
 
 def print_data(data):
@@ -31,6 +32,8 @@ def print_data(data):
     print(f"number of products ranked are : {len(product_counter)}")
     print(f"number of ranking are: {len(data)}")
     print(f"minimum number of ratings given to a product : {product_counter.most_common()[-1][1]}")
-    print(f"maximum number of ratings given to a product : {product_counter.most_common(n=1)[0][1]}")
+    print(
+        f"maximum number of ratings given to a product : {product_counter.most_common(n=1)[0][1]}"
+    )
     print(f"minimum number of products ratings by user : {user_counter.most_common()[-1][1]}")
     print(f"maximum number of products ratings by user : {user_counter.most_common(n=1)[0][1]}")
