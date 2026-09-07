@@ -20,7 +20,7 @@ uv sync --dev
 Run the full recovered experiment against the supplied CSV data:
 
 ```bash
-uv run python main.py
+uv run python src/main.py
 ```
 
 The supplied data contains roughly 400,000 training ratings and 100,000 test ratings, so the full matrix computation requires substantially more memory and time than the unit tests.
@@ -33,4 +33,13 @@ uv run pytest
 
 ## Repository Provenance
 
-The included `report.pdf` retains the author's name while removing submission identifiers and contact information. Dataset user and product values are part of the supplied exercise data, not personal account details belonging to the author.
+The included `docs/report.pdf` retains the author's name while removing submission identifiers and contact information. Dataset user and product values are part of the supplied exercise data, not personal account details belonging to the author.
+
+## Repository layout
+
+- `src/`: recommender implementation, evaluation helpers, and the experiment entry point.
+- `data/`: supplied training and test CSV files, unchanged.
+- `docs/`: my report.
+- `tests/`: small deterministic regression tests.
+
+Run commands from the repository root. The experiment resolves supplied data relative to its source location, so launching the script from another working directory also finds the same input files.

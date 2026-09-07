@@ -1,12 +1,17 @@
+from pathlib import Path
+
 import pandas as pd
 
 from collaborative_filtering import Recommender
 from data import print_data, watch_data_info
 from evaluation import RMSE, precision_at_k, recall_at_k
 
+DATA_DIR = Path(__file__).resolve().parents[1] / "data"
+
+
 if __name__ == "__main__":
-    dataset = pd.read_csv("train.csv")
-    test_set = pd.read_csv("test.csv")
+    dataset = pd.read_csv(DATA_DIR / "train.csv")
+    test_set = pd.read_csv(DATA_DIR / "test.csv")
 
     # PART 1 - DATA
     watch_data_info(dataset)
