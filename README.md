@@ -33,7 +33,7 @@ uv run pytest
 
 ## Repository Provenance
 
-The included `docs/report.pdf` retains the author's name while removing submission identifiers and contact information. Dataset user and product values are part of the supplied exercise data, not personal account details belonging to the author.
+`docs/report.pdf` contains my submitted report. Dataset user and product values are part of the supplied exercise data, not personal account details belonging to me.
 
 ## Repository layout
 
