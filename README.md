@@ -1,6 +1,6 @@
 # Collaborative Filtering Recommender
 
-A CS MSc Introduction to Artificial Intelligence exercise implementing user-based and item-based collaborative filtering. The recovered solution builds a user-item matrix, predicts missing ratings with cosine similarity, recommends unrated products, and compares the model with simple benchmarks using RMSE, precision, and recall.
+A CS MSc Introduction to Artificial Intelligence exercise implementing user-based and item-based collaborative filtering. The solution builds a user-item matrix, predicts missing ratings with cosine similarity, recommends unrated products, and compares the model with simple benchmarks using RMSE, precision, and recall.
 
 `docs/report.pdf` contains my submitted report. Dataset user and product values are part of the supplied exercise data, not personal account details belonging to me.
 
@@ -19,7 +19,7 @@ uv sync --dev
 
 ## Usage
 
-Run the full recovered experiment against the supplied CSV data:
+Run the full experiment against the supplied CSV data:
 
 ```bash
 uv run python src/main.py
