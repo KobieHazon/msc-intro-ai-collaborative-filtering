@@ -2,6 +2,8 @@
 
 A CS MSc Introduction to Artificial Intelligence exercise implementing user-based and item-based collaborative filtering. The recovered solution builds a user-item matrix, predicts missing ratings with cosine similarity, recommends unrated products, and compares the model with simple benchmarks using RMSE, precision, and recall.
 
+`docs/report.pdf` contains my submitted report. Dataset user and product values are part of the supplied exercise data, not personal account details belonging to me.
+
 ## Requirements
 
 - Python 3.10 or newer
@@ -30,10 +32,6 @@ Run the focused deterministic tests with:
 ```bash
 uv run pytest
 ```
-
-## Repository Provenance
-
-`docs/report.pdf` contains my submitted report. Dataset user and product values are part of the supplied exercise data, not personal account details belonging to me.
 
 ## Repository layout
 
